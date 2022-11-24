@@ -23,14 +23,13 @@ class VerTotalActivity : AppCompatActivity() {
 
         val bruto = intent.getStringExtra(EXTRA_BRUTO)
 
-        tvValorBruto.text = String.format(getString(R.string.bruto), bruto)
+        tvValorBruto.text = bruto
 
+        val num1 = bruto.toString().toInt()
+        resul = ((16 * (num1) / 100) + num1).toDouble()
 
+        tvValorNeto.text = resul.toString()
 
-
-
-        val num1:Int = Integer.parseInt(EXTRA_BRUTO)
-        resul = (16 * (num1) / 100).toDouble()
 
     }
 }

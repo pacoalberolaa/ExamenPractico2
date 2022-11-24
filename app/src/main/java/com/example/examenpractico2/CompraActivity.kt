@@ -46,12 +46,12 @@ class CompraActivity : AppCompatActivity() {
     }
 
     fun enviarVerTotal() {
-        val num1:Int = Integer.parseInt(etCantidad.text.toString())
-        val num2:Int = Integer.parseInt(etPrecio.text.toString())
+        val num1:Int = etCantidad.text.toString().toInt()
+        val num2:Int = etPrecio.text.toString().toInt()
         val resul = num1 * num2
 
         val intent = Intent(this, VerTotalActivity::class.java)
-        intent.putExtra(VerTotalActivity.EXTRA_BRUTO, resul)
-        startActivity(intent)
+        intent.putExtra(VerTotalActivity.EXTRA_BRUTO, resul.toString())
+        verTotalLauncher.launch(intent)
     }
 }
