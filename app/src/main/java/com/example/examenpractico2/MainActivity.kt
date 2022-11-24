@@ -16,11 +16,17 @@ class MainActivity : AppCompatActivity() {
         btDetalles = findViewById(R.id.btDetalles)
 
         btCompra.setOnClickListener { enviarCompra() }
+        btDetalles.setOnClickListener{enviarDetalles()}
     }
 
 
     fun enviarCompra(){
         val intent = Intent(this, CompraActivity::class.java)
+        startActivity(intent)
+    }
+
+    fun enviarDetalles(){
+        val intent = Intent(this, DetallesActivity::class.java)
         startActivity(intent)
     }
 
