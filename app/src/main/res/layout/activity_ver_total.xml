@@ -6,4 +6,92 @@
     android:layout_height="match_parent"
     tools:context=".VerTotalActivity">
 
+    <TextView
+        android:id="@+id/tvValorBruto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/tvValorIVA"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.373"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.551" />
+
+    <TextView
+        android:id="@+id/tvValorIVA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/A16_0"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/tvValorNeto"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.373"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.71" />
+
+    <TextView
+        android:id="@+id/tvValorNeto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.373"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.291" />
+
+    <TextView
+        android:id="@+id/tvNeto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/neto"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/btFacturar"
+        app:layout_constraintEnd_toStartOf="@+id/tvValorNeto"
+        app:layout_constraintHorizontal_bias="0.712"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.479" />
+
+    <TextView
+        android:id="@+id/tvIba"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/iva"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/tvNeto"
+        app:layout_constraintEnd_toStartOf="@+id/tvValorIVA"
+        app:layout_constraintHorizontal_bias="0.684"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.715" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/bruto"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/tvIba"
+        app:layout_constraintEnd_toStartOf="@+id/tvValorBruto"
+        app:layout_constraintHorizontal_bias="0.613"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.545" />
+
+    <Button
+        android:id="@+id/btFacturar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/facturar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.19"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvValorNeto"
+        app:layout_constraintVertical_bias="0.485" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -4,4 +4,12 @@
     <string name="selecciona_una_opcion">Selecciona una Opcion</string>
     <string name="compra">Compra</string>
     <string name="ver_total">Ver Total</string>
+    <string name="bruto">Bruto</string>
+    <string name="facturar">Facturar</string>
+    <string name="iva">Iva</string>
+    <string name="neto">Neto</string>
+    <string name="A16_0">16</string>
+    <string name="precio">Precio</string>
+    <string name="cantidad">Cantidad</string>
+    <string name="total">El precio total de la compra es de: %s</string>
 </resources>
