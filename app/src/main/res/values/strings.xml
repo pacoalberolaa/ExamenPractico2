@@ -12,4 +12,11 @@
     <string name="precio">Precio</string>
     <string name="cantidad">Cantidad</string>
     <string name="total">El precio total de la compra es de: %s €</string>
+    <string name="foto_de_la_cartelera_de_la_pelicula">Foto de la cartelera de la pelicula</string>
+    <string name="imagen_de_la_pelicula">Imagen de la pelicula</string>
+    <string name="comprar_9_95">Comprar: 7.50</string>
+    <string name="noviembre_2022_pg_145_minutos">18 Diciembre 2009 182 minutos</string>
+    <string name="los_reglones_de_dios">Avatar</string>
+    <string name="alquilar_1_99">Alquilar: 3.00€</string>
+    <string name="similares">Similares</string>
 </resources>
