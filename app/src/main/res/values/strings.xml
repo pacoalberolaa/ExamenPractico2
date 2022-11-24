@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">ExamenPractico2</string>
+    <string name="detalles">Detalles</string>
+    <string name="selecciona_una_opcion">Selecciona una Opcion</string>
+    <string name="compra">Compra</string>
+    <string name="ver_total">Ver Total</string>
+</resources>
